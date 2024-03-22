@@ -1,0 +1,21 @@
+table{
+	border: solid 1px black;
+	width: 100%;
+	height: 100%;
+}
+
+#divTable{
+	width: 800px;
+	height: 400px;
+}
+
+body{
+	background-color: dimgray;
+}
+
+#trNome{
+	border: solid 1px black;
+}
+#trNota{
+	margin-left: 500px;
+}

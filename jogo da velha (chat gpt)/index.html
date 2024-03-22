@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- CSS file Included -->
+    <link rel="stylesheet" type="text/css" href="tic.css">
+    <!-- JavaScript file included -->
+    <script src="tic.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Jogo da Velha</h1>
+        <p id="ins">O jogo começa apenas clicando no tabuleiro<br><br> Primeiro Jogador começa com <b>Jogador X </b>E o
+            segundo Jogador com <b>Jogador 0</b></p>
+        <br><br>
+        <div class="ui">
+            <div class="row">
+                <input type="text" id="b1" class="cell" onclick="makeMove('b1');" readonly>
+                <input type="text" id="b2" class="cell" onclick="makeMove('b2');" readonly>
+                <input type="text" id="b3" class="cell" onclick="makeMove('b3');" readonly>
+            </div>
+            <div class="row">
+                <input type="text" id="b4" class="cell" onclick="makeMove('b4');" readonly>
+                <input type="text" id="b5" class="cell" onclick="makeMove('b5');" readonly>
+                <input type="text" id="b6" class="cell" onclick="makeMove('b6');" readonly>
+            </div>
+            <div class="row">
+                <input type="text" id="b7" class="cell" onclick="makeMove('b7');" readonly>
+                <input type="text" id="b8" class="cell" onclick="makeMove('b8');" readonly>
+                <input type="text" id="b9" class="cell" onclick="makeMove('b9');" readonly>
+            </div>
+        </div>
+        <br><br><br>
+        <button id="but" onclick="restartGame();">INICIAR</button>
+        <button onclick="restartGame();">Reiniciar Jogo</button>
+        <br><br>
+        <p id="status" class="blinking">Jogador X</p>
+    </div>
+</body>
+
+</html>
